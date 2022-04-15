@@ -13,6 +13,13 @@ describe("Age", () => {
     expect(ages.jupiterAge).toEqual(285);
   });
   test("Should return the age left to live", () => {
+    ages = new Age(24, "USA", "Athlete");
+    ages.lifeExpancey();
+    expect(ages.earthAgeLeft).toEqual(72);
+    ages = new Age(24, "Eritrea", "Engineer");
+    ages.lifeExpancey();
+    expect(ages.earthAgeLeft).toEqual(61);
+    ages = new Age(24, "Eritrea", "Athlete");
     ages.lifeExpancey();
     expect(ages.earthAgeLeft).toEqual(56);
   });
