@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "Age-Calculator",
   "version": "1.0.0",
   "description": "",
   "main": "age-calculator.js",
@@ -9,9 +9,8 @@
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
-
   "keywords": [],
-  "author": "",
+  "author": " Meron G.Tekie",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
