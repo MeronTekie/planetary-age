@@ -25,17 +25,24 @@ $(document).ready(function () {
     } else {
       $("#result").removeClass("output");
       $("#earth").text(
-        "Your Age  in Earth has exceeded by: " + myAge.earthAgeLeft
+        "Your Age  in Earth has exceeded the average life-span by: " +
+          myAge.earthAgeLeft
       );
       $("#mercury").text(
-        "Your Age in Mercury has exceeded by: " + myAge.mercuryAgeLeft
+        "Your Age in Mercury has exceededthe average life-span by: " +
+          myAge.mercuryAgeLeft
       );
       $("#venus").text(
-        "Your Age in Venus has exceeded by: " + myAge.venusAgeLeft
+        "Your Age in Venus has exceeded the average life-span by: " +
+          myAge.venusAgeLeft
       );
-      $("#mars").text("Your Age in Mars has exceeded by: " + myAge.marsAgeLeft);
+      $("#mars").text(
+        "Your Age in Mars has exceeded the average life-span by: " +
+          myAge.marsAgeLeft
+      );
       $("#jupiter").text(
-        "Your Age in  Jupiter has exceeded by: " + myAge.jupiterAgeLeft
+        "Your Age in  Jupiter has exceeded the average life-span by: " +
+          myAge.jupiterAgeLeft
       );
     }
   });
