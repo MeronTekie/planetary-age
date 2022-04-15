@@ -8,4 +8,10 @@ export default class Age {
     this.marsAge = Math.round(1.88 * age);
     this.jupiterAge = Math.round(11.86 * age);
   }
+  lifeExpancey() {
+    let avergeAge = 85;
+    let ageLeftOnEarth;
+    ageLeftOnEarth = avergeAge - this.earthAge;
+    return ageLeftOnEarth;
+  }
 }
