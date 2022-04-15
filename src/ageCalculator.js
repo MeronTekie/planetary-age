@@ -40,17 +40,17 @@ export default class Age {
   }
   moreThanAverageAge() {
     if (this.earthAgeLeft < 0) {
-      this.earthAgeLeft = Math.abs(this.earthAgeLeft);
-      this.mercuryAgeLeft = Math.abs(this.mercuryAgeLeft);
-      this.venusAgeLeft = Math.abs(this.venusAgeLeft);
-      this.marsAgeLeft = Math.abs(this.marsAgeLeft);
-      this.jupiterAgeLeft = Math.abs(this.jupiterAgeLeft);
+      this.earthAgeLeft = Math.round(Math.abs(this.earthAgeLeft));
+      this.mercuryAgeLeft = Math.round(Math.abs(this.mercuryAgeLeft));
+      this.venusAgeLeft = Math.round(Math.abs(this.venusAgeLeft));
+      this.marsAgeLeft = Math.round(Math.abs(this.marsAgeLeft));
+      this.jupiterAgeLeft = Math.round(Math.abs(this.jupiterAgeLeft));
     } else {
-      this.earthAgeLeft;
-      this.mercuryAgeLeft;
-      this.venusAgeLeft;
-      this.marsAgeLeft;
-      this.jupiterAgeLeft;
+      this.earthAgeLeft = Math.round(this.earthAgeLeft);
+      this.mercuryAgeLeft = Math.round(this.mercuryAgeLeft);
+      this.venusAgeLeft = Math.round(this.venusAgeLeft);
+      this.marsAgeLeft = Math.round(this.marsAgeLeft);
+      this.jupiterAgeLeft = Math.round(this.jupiterAgeLeft);
     }
   }
 }

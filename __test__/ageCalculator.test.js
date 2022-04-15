@@ -23,14 +23,22 @@ describe("Age", () => {
     ages.lifeExpancey();
     expect(ages.earthAgeLeft).toEqual(58);
   });
-  test("Should return the age left to live", () => {
+  test("Should return the age left to live in positive value", () => {
     ages = new Age(88, "USA", "Athlete");
     ages.lifeExpancey();
     ages.moreThanAverageAge();
     expect(ages.earthAgeLeft).toEqual(8);
-    expect(ages.mercuryAgeLeft).toEqual(1.92);
-    expect(ages.venusAgeLeft).toEqual(4.96);
-    expect(ages.marsAgeLeft).toEqual(15.04);
-    expect(ages.jupiterAgeLeft).toEqual(94.88);
+    expect(ages.mercuryAgeLeft).toEqual(2);
+    expect(ages.venusAgeLeft).toEqual(5);
+    expect(ages.marsAgeLeft).toEqual(15);
+    expect(ages.jupiterAgeLeft).toEqual(95);
+    ages = new Age(25, "USA", "Athlete");
+    ages.lifeExpancey();
+    ages.moreThanAverageAge();
+    expect(ages.earthAgeLeft).toEqual(55);
+    expect(ages.mercuryAgeLeft).toEqual(13);
+    expect(ages.venusAgeLeft).toEqual(34);
+    expect(ages.marsAgeLeft).toEqual(103);
+    expect(ages.jupiterAgeLeft).toEqual(652);
   });
 });
