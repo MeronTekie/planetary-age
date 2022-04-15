@@ -26,6 +26,11 @@ describe("Age", () => {
   test("Should return the age left to live", () => {
     ages = new Age(88, "USA", "Athlete");
     ages.lifeExpancey();
-    expect(ages.venusAgeLeft).toEqual(-4.96);
+    ages.moreThanAverageAge();
+    expect(ages.earthAgeLeft).toEqual(8);
+    expect(ages.mercuryAgeLeft).toEqual(1.92);
+    expect(ages.venusAgeLeft).toEqual(4.96);
+    expect(ages.marsAgeLeft).toEqual(15.04);
+    expect(ages.jupiterAgeLeft).toEqual(94.88);
   });
 });

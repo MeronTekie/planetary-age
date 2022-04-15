@@ -39,32 +39,12 @@ export default class Age {
     }
   }
   moreThanAverageAge() {
-    if (
-      this.earthAgeage > 75 &&
-      this.country === "USA" &&
-      this.profession === "Athlete"
-    ) {
-      Math.abs(this.earthAgeLeft);
-      Math.abs(this.mercuryAgeLeft);
-      Math.abs(this.venusAgeLeft);
-      Math.abs(this.marsAgeLeft);
-      Math.abs(this.jupiterAgeLeft);
-    } else if (
-      this.earthAgeage > 80 &&
-      this.country === "Eritrea" &&
-      this.profession === "Engineer"
-    ) {
-      Math.abs(this.earthAgeLeft);
-      Math.abs(this.mercuryAgeLeft);
-      Math.abs(this.venusAgeLeft);
-      Math.abs(this.marsAgeLeft);
-      Math.abs(this.jupiterAgeLeft);
-    } else if (this.earthAge > 82) {
-      Math.abs(this.earthAgeLeft);
-      Math.abs(this.mercuryAgeLeft);
-      Math.abs(this.venusAgeLeft);
-      Math.abs(this.marsAgeLeft);
-      Math.abs(this.jupiterAgeLeft);
+    if (this.earthAgeLeft < 0) {
+      this.earthAgeLeft = Math.abs(this.earthAgeLeft);
+      this.mercuryAgeLeft = Math.abs(this.mercuryAgeLeft);
+      this.venusAgeLeft = Math.abs(this.venusAgeLeft);
+      this.marsAgeLeft = Math.abs(this.marsAgeLeft);
+      this.jupiterAgeLeft = Math.abs(this.jupiterAgeLeft);
     } else {
       this.earthAgeLeft;
       this.mercuryAgeLeft;
