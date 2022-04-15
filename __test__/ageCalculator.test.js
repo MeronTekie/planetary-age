@@ -16,10 +16,10 @@ describe("Age", () => {
     ages = new Age(24, "USA", "Athlete");
     ages.lifeExpancey();
     expect(ages.earthAgeLeft).toEqual(56);
-    ages = new Age(24, "Eritrea", "Engineer");
+    ages = new Age(24, "UK", "Engineer");
     ages.lifeExpancey();
     expect(ages.earthAgeLeft).toEqual(51);
-    ages = new Age(24, "Eritrea", "Athlete");
+    ages = new Age(24, "Oceania", "Athlete");
     ages.lifeExpancey();
     expect(ages.earthAgeLeft).toEqual(58);
   });

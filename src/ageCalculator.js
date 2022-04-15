@@ -15,14 +15,14 @@ export default class Age {
   lifeExpancey() {
     let avergeAge;
 
-    if (this.country === "Eritrea" && this.profession === "Engineer") {
+    if (this.country === "uk" && this.profession === "engineer") {
       avergeAge = 75;
       this.earthAgeLeft = avergeAge - this.earthAge;
       this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
       this.venusAgeLeft = (avergeAge - this.earthAge) * 0.62;
       this.marsAgeLeft = (avergeAge - this.earthAge) * 1.88;
       this.jupiterAgeLeft = (avergeAge - this.earthAge) * 11.86;
-    } else if (this.country === "USA" && this.profession === "Athlete") {
+    } else if (this.country === "usa" && this.profession === "athlete") {
       avergeAge = 80;
       this.earthAgeLeft = avergeAge - this.earthAge;
       this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;

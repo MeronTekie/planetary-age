@@ -4,6 +4,29 @@
     <title>Age Calculator</title>
   </head>
   <body>
-    <h1>Welcome to the Universal Age Calculator</h1>
+    <div>
+      <h1>Welcome to the Universal Age Calculator</h1>
+      <form id="age-calculator">
+        <label for="age"> Enter your age:</label>
+        <input id="age" type="number" min="1" class="form-control" />
+        <label for="age"> Enter where you from:</label>
+        <select name="country" id="country" class="form-control">
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">CANADA</option>
+          <option value="other">OTHER</option>
+        </select>
+        <label for="age"> What Do you do for living:</label>
+        <select name="country" id="profession" class="form-control">
+          <option value="athlete">ATHLETE</option>
+          <option value="engineer">ENGINEER</option>
+          <option value="doctor">DOCTOR</option>
+          <option value="other">OTHER</option>
+        </select>
+        <br />
+        <button type="submit">Check Your Age</button>
+      </form>
+    </div>
+    <div id="output"></div>
   </body>
 </html>

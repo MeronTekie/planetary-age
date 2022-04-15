@@ -5,7 +5,17 @@ import "./css/styles.css";
 // import Age from "./ageCalculator.js";
 
 $(document).ready(function () {
-  $("#triangle-checker-form").submit(function (event) {
+  $("#age-calculator").submit(function (event) {
     event.preventDefault();
+    // let age = parseInt($("#age").val());
+    // let country = $("#country").val();
+    // let profession = $("#profession").val();
+
+    // const myAge = new Age(age, country, profession);
+    // myAge.lifeExpancey();
+    // myAge.moreThanAverageAge();
+
+    // if (myAge.earthAge < 82) {
+    // }
   });
 });
