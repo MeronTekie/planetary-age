@@ -15,12 +15,17 @@ describe("Age", () => {
   test("Should return the age left to live", () => {
     ages = new Age(24, "USA", "Athlete");
     ages.lifeExpancey();
-    expect(ages.earthAgeLeft).toEqual(72);
+    expect(ages.earthAgeLeft).toEqual(56);
     ages = new Age(24, "Eritrea", "Engineer");
     ages.lifeExpancey();
-    expect(ages.earthAgeLeft).toEqual(61);
+    expect(ages.earthAgeLeft).toEqual(51);
     ages = new Age(24, "Eritrea", "Athlete");
     ages.lifeExpancey();
-    expect(ages.earthAgeLeft).toEqual(56);
+    expect(ages.earthAgeLeft).toEqual(58);
+  });
+  test("Should return the age left to live", () => {
+    ages = new Age(88, "USA", "Athlete");
+    ages.lifeExpancey();
+    expect(ages.venusAgeLeft).toEqual(-4.96);
   });
 });

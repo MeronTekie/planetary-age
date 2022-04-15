@@ -15,18 +15,62 @@ export default class Age {
   lifeExpancey() {
     let avergeAge;
 
-    // let ageLeftOnmercury;
-    // let ageLeftOnVenus;
-    // let ageLeftOnJupiter;
     if (this.country === "Eritrea" && this.profession === "Engineer") {
-      avergeAge = 85;
+      avergeAge = 75;
       this.earthAgeLeft = avergeAge - this.earthAge;
+      this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
+      this.venusAgeLeft = (avergeAge - this.earthAge) * 0.62;
+      this.marsAgeLeft = (avergeAge - this.earthAge) * 1.88;
+      this.jupiterAgeLeft = (avergeAge - this.earthAge) * 11.86;
     } else if (this.country === "USA" && this.profession === "Athlete") {
-      avergeAge = 96;
-      this.earthAgeLeft = avergeAge - this.earthAge;
-    } else {
       avergeAge = 80;
       this.earthAgeLeft = avergeAge - this.earthAge;
+      this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
+      this.venusAgeLeft = (avergeAge - this.earthAge) * 0.62;
+      this.marsAgeLeft = (avergeAge - this.earthAge) * 1.88;
+      this.jupiterAgeLeft = (avergeAge - this.earthAge) * 11.86;
+    } else {
+      avergeAge = 82;
+      this.earthAgeLeft = avergeAge - this.earthAge;
+      this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
+      this.venusAgeLeft = (avergeAge - this.earthAge) * 0.62;
+      this.marsAgeLeft = (avergeAge - this.earthAge) * 1.88;
+      this.jupiterAgeLeft = (avergeAge - this.earthAge) * 11.86;
+    }
+  }
+  moreThanAverageAge() {
+    if (
+      this.earthAgeage > 75 &&
+      this.country === "USA" &&
+      this.profession === "Athlete"
+    ) {
+      Math.abs(this.earthAgeLeft);
+      Math.abs(this.mercuryAgeLeft);
+      Math.abs(this.venusAgeLeft);
+      Math.abs(this.marsAgeLeft);
+      Math.abs(this.jupiterAgeLeft);
+    } else if (
+      this.earthAgeage > 80 &&
+      this.country === "Eritrea" &&
+      this.profession === "Engineer"
+    ) {
+      Math.abs(this.earthAgeLeft);
+      Math.abs(this.mercuryAgeLeft);
+      Math.abs(this.venusAgeLeft);
+      Math.abs(this.marsAgeLeft);
+      Math.abs(this.jupiterAgeLeft);
+    } else if (this.earthAge > 82) {
+      Math.abs(this.earthAgeLeft);
+      Math.abs(this.mercuryAgeLeft);
+      Math.abs(this.venusAgeLeft);
+      Math.abs(this.marsAgeLeft);
+      Math.abs(this.jupiterAgeLeft);
+    } else {
+      this.earthAgeLeft;
+      this.mercuryAgeLeft;
+      this.venusAgeLeft;
+      this.marsAgeLeft;
+      this.jupiterAgeLeft;
     }
   }
 }
