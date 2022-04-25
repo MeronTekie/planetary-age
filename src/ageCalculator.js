@@ -3,20 +3,25 @@ export default class Age {
     this.earthAge = age;
     this.country = country;
     this.profession = profession;
-    this.mercuryAge = Math.round(0.24 * age);
-    this.venusAge = Math.round(0.62 * age);
-    this.marsAge = Math.round(1.88 * age);
-    this.jupiterAge = Math.round(11.86 * age);
+    this.mercuryAge = 0;
+    this.venusAge = 0;
+    this.marsAge = 0;
+    this.jupiterAge = 0;
     this.earthAgeLeft = 0;
     this.mercuryAgeLeft = 0;
     this.venusAgeLeft = 0;
     this.marsAgeLeft = 0;
   }
   lifeExpancey() {
+    this.mercuryAge = Math.round(0.24 * this.earthAge);
+    this.venusAge = Math.round(0.62 * this.earthAge);
+    this.marsAge = Math.round(1.88 * this.earthAge);
+    this.jupiterAge = Math.round(11.86 * this.earthAge);
     let avergeAge;
 
     if (this.country === "uk" && this.profession === "engineer") {
       avergeAge = 75;
+
       this.earthAgeLeft = avergeAge - this.earthAge;
       this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
       this.venusAgeLeft = (avergeAge - this.earthAge) * 0.62;
