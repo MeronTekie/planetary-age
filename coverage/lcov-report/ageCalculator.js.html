@@ -24,7 +24,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>42/42</span>
+                <span class='fraction'>46/46</span>
             </div>
         
             
@@ -45,7 +45,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>42/42</span>
+                <span class='fraction'>46/46</span>
             </div>
         
             
@@ -112,7 +112,12 @@
 <a name='L54'></a><a href='#L54'>54</a>
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">8x</span>
@@ -127,8 +132,20 @@
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -136,20 +153,13 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -173,26 +183,31 @@
     this.earthAge = age;
     this.country = country;
     this.profession = profession;
-    this.mercuryAge = Math.round(0.24 * age);
-    this.venusAge = Math.round(0.62 * age);
-    this.marsAge = Math.round(1.88 * age);
-    this.jupiterAge = Math.round(11.86 * age);
+    this.mercuryAge = 0;
+    this.venusAge = 0;
+    this.marsAge = 0;
+    this.jupiterAge = 0;
     this.earthAgeLeft = 0;
     this.mercuryAgeLeft = 0;
     this.venusAgeLeft = 0;
     this.marsAgeLeft = 0;
   }
   lifeExpancey() {
+    this.mercuryAge = Math.round(0.24 * this.earthAge);
+    this.venusAge = Math.round(0.62 * this.earthAge);
+    this.marsAge = Math.round(1.88 * this.earthAge);
+    this.jupiterAge = Math.round(11.86 * this.earthAge);
     let avergeAge;
 &nbsp;
-    if (this.country === "Eritrea" &amp;&amp; this.profession === "Engineer") {
+    if (this.country === "uk" &amp;&amp; this.profession === "engineer") {
       avergeAge = 75;
+&nbsp;
       this.earthAgeLeft = avergeAge - this.earthAge;
       this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
       this.venusAgeLeft = (avergeAge - this.earthAge) * 0.62;
       this.marsAgeLeft = (avergeAge - this.earthAge) * 1.88;
       this.jupiterAgeLeft = (avergeAge - this.earthAge) * 11.86;
-    } else if (this.country === "USA" &amp;&amp; this.profession === "Athlete") {
+    } else if (this.country === "usa" &amp;&amp; this.profession === "athlete") {
       avergeAge = 80;
       this.earthAgeLeft = avergeAge - this.earthAge;
       this.mercuryAgeLeft = (avergeAge - this.earthAge) * 0.24;
@@ -231,7 +246,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Apr 15 2022 13:31:28 GMT-0700 (Pacific Daylight Time)
+                at Mon Apr 25 2022 03:27:33 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>
