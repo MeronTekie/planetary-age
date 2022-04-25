@@ -27,9 +27,12 @@ The website provides th age in different planets and tells you the age you have 
 ## Setup/Installation Requirements
 
 - Fork this [Github](https://github.com/MeronTekie/planetary-age.git) link and clone it to your machine
-- Navigate through the directory
-- Select the index.html File
-- Click index.html file , you machine's browser (_Chrome is highly recommended_)should be able to run the file
+
+- Navigate through the directory through terminal,cmd or any extension application(like vscode).
+
+- Run _npm install_ to make sure yiu have all the necessary packages to begin with.
+
+- Finally type _npm run start_ in the terminal to run them in your browsing engine while building them in your coding site(like VScode).
 
 ## Known Bugs
 
