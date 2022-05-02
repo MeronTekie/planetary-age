@@ -32,7 +32,15 @@ The website provides th age in different planets and tells you the age you have 
 
 - Run _npm install_ to make sure yiu have all the necessary packages to begin with.
 
-- Finally type _npm run start_ in the terminal to run them in your browsing engine while building them in your coding site(like VScode).
+- Run type _npm run start_ in the terminal to run them in your browsing engine while building them in your coding site(like VScode).
+
+- Make sure to run the below three tests before pushing your project to your repository.
+
+- Then type _npm run test_ to check the TDD flow.
+
+- 1,Your project must successfully take an argument from the DOM and return as a value of the EArth age
+- 2, Upon calling the lifeExpancey method your test should return a value for age left in each planet even if the age exceeds the average age.
+- 3, Your final test should return all the negative values in the planets age left even if it exceeds the life span average by calling the moreThanAverageAge method.
 
 ## Known Bugs
 
